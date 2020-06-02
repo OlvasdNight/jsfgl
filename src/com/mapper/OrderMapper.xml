@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.OrderMapper">
+	<select id="findOrderList" 
+		resultType="Order">
+		select * from torder 
+	</select>
+	
+	<select id="query" parameterType="java.util.Map" resultType="Order">
+		SELECT * from  torder
+		<where>
+			
+		
+			<if test="id!=null and id!=0">
+			   and id= #{id}
+			</if>
+			<if test="uid!=null and uid!=0">
+			   and uid= #{uid}
+			</if>
+			<if test="courseid!=null and courseid!=0">
+			   and courseid= #{courseid}
+			</if>
+			<if test="coachid!=null and coachid!=0">
+			   and coachid= #{coachid}
+			</if>
+		</where>
+		order by cdate desc
+		<if test="page">
+			     limit #{offset} ,#{pageSize}
+		</if>
+	</select>
+	
+	
+	<select id="getCount" parameterType="java.util.Map" resultType="Int">
+		SELECT count(0) FROM torder 
+		<where>
+			
+			<if test="id!=null and id!=0">
+			   and id= #{id}
+			</if>
+			<if test="uid!=null and uid!=0">
+			   and uid= #{uid}
+			</if>
+			<if test="courseid!=null and courseid!=0">
+			   and courseid= #{courseid}
+			</if>
+			<if test="coachid!=null and coachid!=0">
+			   and coachid= #{coachid}
+			</if>
+		</where>
+	</select>
+	
+	
+	<select id="queryOrderById" parameterType="int" resultType="Order">
+		SELECT * FROM torder where id=${value}
+	</select>
+ 
+
+
+	<insert id="insertOrder" useGeneratedKeys="true" keyProperty="id" parameterType="Order">
+		insert into torder
+		(uid,courseid,coachid,tel,cdate,state,feiyong)
+		values
+		(#{uid},#{courseid},#{coachid},#{tel},#{cdate},#{state},#{feiyong});
+	</insert>
+ 
+	<update id="updateOrder" parameterType="Order" >
+		update torder set
+		state=#{state}
+		where
+		id=#{id}	
+	</update>
+	
+ 
+	
+	<delete id="deleteOrder" parameterType="int">
+	    delete from  torder where id=${value}
+	</delete>
+	
+	
+	<select id="tjByAge" parameterType="java.util.Map"  resultType="Chart">
+		SELECT  INTERVAL(b.age,20,30,40,50,60) AS ratio, SUM(1) AS num  FROM torder a,USER b WHERE a.uid=b.id  and a.state='完成'  GROUP BY ratio;
+	</select>
+	
+	
+	<select id="tjBySex" parameterType="java.util.Map"  resultType="Chart">
+		 SELECT  b.sex,  SUM(1) AS num  FROM torder a,USER b WHERE a.uid=b.id and a.state='完成' GROUP BY b.sex
+	</select>
+
+</mapper>
+
+ 

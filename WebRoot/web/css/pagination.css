@@ -1,0 +1,27 @@
+@charset "utf-8";      
+.pagination a {
+    text-decoration: none;
+	border: 1px solid #dddddd;
+	color: #fff;
+}
+
+.pagination a, .pagination span {
+    display: inline-block;
+    padding: 0.1em 0.7em;
+    margin-right: 5px;
+	margin-bottom: 5px;
+	color:#fff;
+}
+
+.pagination .current {
+    background: #c7000a;
+    color: #fff;
+	border: 1px solid #AAE;
+}
+
+.pagination .current.prev, .pagination .current.next{
+	background:none;
+	border: 1px solid #dddddd;
+    color: #cccccc;
+}
+

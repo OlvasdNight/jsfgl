@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.JiluMapper">
+	<select id="findJiluList" 
+		resultType="Jilu">
+		select * from jilu 
+	</select>
+	
+	<select id="query" parameterType="java.util.Map" resultType="Jilu">
+		select * from jilu 
+	
+		<where>
+			<if test="id!=null and id!=0">
+			   and id= #{id}
+			</if>
+			
+			<if test="uid!=null and uid!=0">
+			   and uid= #{uid}
+			</if>
+		
+			
+		</where>
+		
+		order by cdate desc
+		
+		<if test="page">
+			limit #{offset} ,#{pageSize}
+		</if>
+	</select>
+	
+	
+	<select id="getCount" parameterType="java.util.Map" resultType="Int">
+		select count(0) from jilu 
+		<where>
+			<if test="id!=null and id!=0">
+			   and id= #{id}
+			</if>
+			
+			<if test="uid!=null and uid!=0">
+			   and uid= #{uid}
+			</if>
+		
+		
+		</where>
+	</select>
+	
+	
+	<select id="queryJiluById" parameterType="int" resultType="Jilu">
+		select * from jilu where id=${value}
+	</select>
+ 
+
+
+	<insert id="insertJilu" useGeneratedKeys="true" keyProperty="id" parameterType="Jilu">
+		insert into jilu
+		(uid,qian,cdate,type)
+		values
+		(#{uid},#{qian},#{cdate},#{type});
+	</insert>
+ 
+	
+  
+ 
+ 
+ 
+ 
+ 
+
+
+
+	<update id="updateJilu" parameterType="Jilu" >
+		update jilu set 
+		uid=#{uid}, qian=#{qian}, cdate=#{cdate}, type=#{type}
+		where
+		id=#{id}	
+	</update>
+	
+ 
+	
+	<delete id="deleteJilu" parameterType="int">
+	    delete from  jilu where id=${value}
+	</delete>
+
+
+</mapper>
+
+ 

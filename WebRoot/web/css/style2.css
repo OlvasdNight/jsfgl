@@ -1,0 +1,775 @@
+.swiper-container.swiper-container-horizontal{
+	height: 560px
+}
+
+
+.about-yzwd {
+	position: relative;
+}
+
+.about-yzwd i,.about-yzwd em{
+	font-style: italic;
+}
+
+.about-yzwd b,.about-yzwd strong{
+	font-weight: bold;	
+}
+
+.contact-us i,.contact-us em{
+	font-style: italic;
+}
+
+.contact-us b,.contact-us strong{
+	font-weight: bold;	
+}
+
+
+.about-yzwd .banner-about {
+	background: url(../img/pic/aboutus_banner.png) no-repeat center;
+	height: 600px;
+	width: 100%;
+}
+
+.about-yzwd section {
+	width: 1200px;
+	margin: 0 auto;
+}
+.about-yzwd section p{
+	color: #fff !important;
+}
+
+.about-yzwd section .title {
+	padding-top: 77px;
+	padding-bottom: 21px;
+}
+
+.about-yzwd section .title p {
+	font-size: 28px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.about-yzwd section .content {
+	padding-top: 62px;
+	border-top: 1px solid #d1d2d1;
+}
+
+.about-yzwd .jion-us1 {
+	background: url(../img/pic/jion-us1.png) no-repeat center;
+	height: 120px;
+	width: 100%;
+	margin-top: 60px;
+	background-size: cover;
+}
+
+.about-yzwd .jion-us2 {
+	background: #B63F2B url(../img/pic/jion-us2.png) no-repeat center;
+	height: 533px;
+	width: 100%;
+	background-size: cover;
+	display: none;
+}
+
+.about-yzwd .jion-us2 .myText {
+	height: 383px;
+	width: 1200px;
+	margin: 0 auto;
+	padding-top: 150px;
+}
+
+.about-yzwd .jion-us2 .myText .p1 {
+	font-size: 32px;
+	color: #fff;
+	text-align: center;
+}
+
+.about-yzwd .jion-us2 .myText .p2 {
+	font-size: 22px;
+	color: #fff;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.about-yzwd .icon {
+	background: url(../img/icon/show_hide.png) no-repeat;
+	height: 60px;
+	width: 60px;
+	margin: 0 auto;
+	position: absolute;
+	bottom: -30px;
+	left: 50%;
+	margin-left: -30px;
+}
+
+
+/*.about-yzwd .jion-us2 .icon{
+	background:url(../img/icon/show_hide.png) no-repeat;
+	height:60px;
+	width:60px;
+	position: relative;
+    top: 503px;
+    margin: 0 auto;
+}*/
+
+
+
+.mission-details {
+	background-color: #191919;
+	color: #fff;
+}
+
+.mission-details .top {
+	height: 596px;
+	width: 100%;
+	background-color: #030303;
+}
+
+.mission-details .top .top-content {
+	width: 1200px;
+	height: 490px;
+	margin: 0 auto;
+	padding-top: 40px;
+}
+
+.mission-details .top-content img {
+	height: 420px;
+	width: 590px;
+	float: left;
+	clear: both;
+}
+
+.mission-details .top-content .Sports-text {
+	width: 525px;
+	float: left;
+	padding-left: 75px;
+}
+
+.mission-details .top-content .Sports-text p:nth-child(1) {
+	font-size: 42px;
+	font-weight: bold;
+	color: #fff;
+	padding-bottom: 38px;
+}
+
+.mission-details .top-content .Sports-text p:nth-child(2) {
+	font-size: 16px;
+	line-height: 28px;
+	color: #ccc;
+}
+
+.mission-details .rows {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.mission-details .rows p.title {
+	font-weight: bold;
+	font-size: 28px;
+	padding-top: 54px;
+	padding-bottom: 32px;
+	color: #fff;
+}
+
+.mission-details .rows .row-1 {
+	height: 180px;
+	width: 100%;
+	border-top: 1px solid #d1d2d1;
+	border-bottom: 1px solid #d1d2d1;
+	margin-bottom: 28px;
+}
+
+.mission-details .rows .row-1 form .form-group {
+	width: 360px;
+	float: left;
+	padding-top: 28px;
+}
+
+.mission-details .rows .row-1 form .form-group label {
+	padding-right: 8px;
+	float: left;
+	font-size: 16px;
+	line-height: 32px;
+	display: inline-block;
+}
+
+.mission-details .rows .row-1 form .form-group .list {
+	float: left;
+	height: 32px;
+	line-height: 32px;
+	width: 190px;
+	padding-left: 10px;
+	font-size: 14px;
+	color: #828282;
+	background-color: #fff;
+	border: 1px solid #999;
+	position: relative;
+}
+
+.mission-details .rows .row-1 form .form-group .list span {
+	width: 190px;
+	height: 32px;
+	font-size: 14px;
+	line-height: 32px;
+	position: absolute;
+	background: url(../img/icon/more2.png) 166px center no-repeat;
+}
+
+.mission-details .rows .row-1 form .form-group .list select {
+	width: 198px;
+	height: 34px;
+	font-size: 16px;
+	color: #828282;
+	padding-left: 10px;
+	width: 201px;
+	height: 32px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	border: 1px solid #999;
+}
+
+.mission-details .rows .row-1 form .form-group select option {
+	color: #828282;
+	font-size: 14px;
+	padding-left: 7px;
+}
+
+.mission-details .rows .row-1 form .radiobox {
+	width: 400px;
+}
+
+.mission-details .rows .row-1 form .radiobox .span_radio {
+	width: 22px;
+	height: 22px;
+	display: inline-block;
+	background: url(../img/icon/radio.png) center no-repeat;
+	text-align: center;
+	vertical-align: top;
+}
+
+.mission-details .rows .row-1 form .radiobox .span_radio_check {
+	background: url(../img/icon/checkedradio.png) center no-repeat;
+}
+
+.mission-details .rows .row-1 form .radiobox p {
+	display: inline-block;
+	height: 22px;
+	/*line-height: 20px;*/
+	margin-right: 20px;
+	position: relative;
+}
+
+.mission-details .rows .row-1 form .radiobox input[type="radio"] {
+	opacity: 0;
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.mission-details .rows .row-1 form .btn-group {
+	width: 120px;
+	padding-top: 26px;
+	float: left;
+}
+
+.mission-details .rows .row-1 form .btn-group button {
+	width: 120px;
+	height: 36px;
+	border: none;
+	color: #fff;
+	background-color: #de492f;
+}
+
+.mission-details .rows .row-2 {
+	width: 100%;
+	display: none;
+	overflow: hidden;
+}
+
+.mission-details .rows .row-2 .row-21 {
+	height: 160px;
+	width: 280px;
+	margin-bottom: 18px;
+	margin-right: 18px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	float: left;
+	background-color: #ededed;
+}
+
+.mission-details .rows .row-2 .row-21 p {
+	padding-top: 14px;
+	padding-left: 20px;
+}
+
+.mission-details .rows .row-2 .row-21 p i {
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 15px;
+}
+
+.mission-details .rows .row-2 .row-21 p span {
+	color: #333;
+}
+
+.mission-details .rows .row-2 .row-21 p:nth-child(1) i {
+	background: url(../img/icon/course1.png) no-repeat;
+	height: 25px;
+	width: 19px;
+}
+
+.mission-details .rows .row-2 .row-21 p:nth-child(2) i {
+	background: url(../img/icon/date.png) no-repeat;
+	height: 21px;
+	width: 21px;
+	background-size: contain;
+}
+
+.mission-details .rows .row-2 .row-21 p:nth-child(3) i {
+	background: url(../img/icon/course2.png) no-repeat;
+	height: 22px;
+	width: 21px;
+}
+
+.mission-details .rows .row-2 .row-21 p:nth-child(4) i {
+	background: url(../img/icon/course4.png) no-repeat;
+	height: 22px;
+	width: 25px;
+}
+
+.mission-details .rows .row-2 .row-21 p:nth-child(2) span {
+/* 	color: #de492f; */
+}
+
+.mission-details .rows .row-3 {
+	height: 655px;
+	width: 100%;
+}
+
+
+.mission-details .rows .row-3 .swiper-container {
+	width: 100%;
+	height: 651px;
+	margin: auto;
+}
+
+.mission-details .rows .row-3 .swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.mission-details .rows .row-3 .swiper-slide img {
+	height: 651px;
+	width: 100%;
+}
+
+.mission-details .rows .row-4 {
+	/*height:918px;*/
+	width: 100%;
+}
+
+.mission-details .rows .row-4 ul {
+	overflow: hidden;
+}
+
+.mission-details .rows .row-4 ul li {
+	width: 360px;
+	height: 150px;
+	float: left;
+	margin-right: 60px;
+	position: relative;
+	margin-top: 50px;
+}
+
+.mission-details .rows .row-4 ul li .gold_img {
+	width: 360px;
+	height: 150px;
+}
+
+.mission-details .rows .row-4 ul li .gold_img img {
+	width: 100%;
+	height: 100%;
+}
+
+.mission-details .rows .row-4 ul li .text {
+	width: 100%;
+	height: 50px;
+	background: rgba(204, 51, 51, .56);
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+
+.mission-details .rows .row-4 ul li .text p {
+	text-align: center;
+	color: #fff;
+	margin-top: 10px;
+}
+
+.mission-details .rows .row-4 ul li:nth-child(3n) {
+	margin-right: 0px;
+}
+
+
+.mission-details .rows .row-5 {
+	height: auto;
+	width: 100%;
+	padding-bottom: 48px;
+}
+
+.mission-details .rows .row-5 p {
+	font-size: 18px;
+	color: #fff;
+	padding-bottom: 30px;
+}
+
+.mission-details .low {
+	background: url(../img/pic/low-banner.png);
+	height: 515px;
+}
+
+.mission-details .low p:nth-child(1) {
+	width: 340px;
+	font-size: 48px;
+	color: #bd432e;
+	margin: 0 auto;
+	padding-top: 64px;
+}
+
+.mission-details .low p:nth-child(2) {
+	width: 505px;
+	font-size: 24px;
+	color: #bd432e;
+	margin: 0 auto;
+	padding-top: 26px;
+}
+
+.mission-details .low form {
+	width: 455px;
+	margin: 0 auto;
+	padding-top: 48px;
+}
+
+.mission-details .low form .form-group {
+	padding-bottom: 26px;
+}
+
+.mission-details .low form .form-group label {
+	font-size: 16px;
+	color: #fff;
+}
+
+.mission-details .low form .form-group input {
+	width: 400px;
+	height: 50px;
+	border: none;
+	padding-left: 2px;
+	background-color: #474747;
+}
+
+.mission-details .low form .btn-group {
+	width: 200px;
+	height: 50px;
+	margin: 0 auto;
+}
+
+.mission-details .low form .btn-group button {
+	width: 200px;
+	height: 50px;
+	border: none;
+	color: #fff;
+	background-color: #de492f;
+}
+
+.fix_nav{
+	position: fixed;
+	top: 0;
+	z-index: 9;
+}
+
+.fitness-club .outAddress{
+    width: 100%;
+    background:rgba(37,37,37,0.44);
+    position: fixed;
+    z-index: 5;
+    margin-top: 96px;
+}
+.fitness-club .outAddress .autoShow{
+	position: absolute;
+	bottom: -29px;
+	background: #CC3333;
+	color: #fff;
+	font-size: 18px;
+	padding: 3px 10px;
+	left: 50%;
+	margin-left:542px ;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	cursor: pointer;
+}
+.fitness-club {
+	width: 100%;
+	background-color: #1f1f1f;
+	
+}
+
+.fitness-club .condition {
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.fitness-club .condition .city {
+	border-bottom: 1px solid #3b3b3b;
+	padding: 6px 0;
+	overflow: hidden;
+}
+
+.fitness-club .condition .city li {
+	float: left;
+	margin-right: 16px;
+	text-align: center;
+	font-size: 15px;
+	height: 26px;
+	line-height: 26px;
+}
+
+.fitness-club .condition .city li{
+	color: #fff;
+	padding: 0 10px;
+	display: inline-block;
+	border-radius: 5px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.fitness-club .condition .city li.current{
+	background: #cc3333;
+}
+
+.fitness-club .condition .county {
+	border-bottom: 1px solid #3b3b3b;
+	padding: 6px 0;
+	overflow: hidden;
+}
+
+.fitness-club .condition .county li {
+	float: left;
+	margin-right: 14px;
+	text-align: center;
+	font-size: 15px;
+	height:26px;
+	line-height: 26px;
+}
+
+.fitness-club .condition .county li{
+	color: #fff;
+	padding: 0 10px;
+	display: inline-block;
+	border-radius: 5px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.fitness-club .condition .county li.current{
+	background: #cc3333;
+}
+
+.fitness-club .condition .dian {
+	padding: 6px 0;
+	overflow: hidden;
+}
+
+.fitness-club .condition .dian li {
+	float: left;
+	margin-right:16px;
+	text-align: center;
+	font-size: 15px;
+	height:26px;
+	line-height:26px;
+}
+
+.fitness-club .condition .dian li{
+	color: #fff;
+	padding: 0 10px;
+	display: inline-block;
+	border-radius: 5px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.fitness-club .condition .dian li.current{
+	background: #cc3333;
+}
+.fitness-club .condition1{
+	position: absolute;
+	top: -42px;
+  left: 110px;
+  opacity: 1;
+}
+.fitness-club #allmap{
+	padding-top: 253px;
+}
+
+.fitness-club .condition form .form-group {
+	padding-top: 32px;
+	float: left;
+	overflow: hidden;
+	margin-right: 20px;
+}
+
+.fitness-club .condition form .form-group label {
+	padding-right: 10px;
+	font-size: 14px;
+	color: #fff;
+	float: left;
+	height: 32px;
+	line-height: 32px;
+	display: inline-block;
+}
+
+.fitness-club .condition form .form-group select option {
+	color: #b8412c;
+}
+
+.fitness-club .condition .form-group .list {
+	width: 190px;
+	float: left;
+	height: 32px;
+	line-height: 32px;
+	width: 190px;
+	padding-left: 10px;
+	font-size: 14px;
+	color: #b8412c;
+	background-color: #1f1f1f;
+	border: 1px solid #fff;
+	position: relative;
+}
+
+.fitness-club .condition .form-group .list select {
+	width: 200px;
+	height: 32px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+.fitness-club .condition .form-group .list span {
+	width: 190px;
+	height: 32px;
+	line-height: 32px;
+	position: absolute;
+	background: url(../img/icon/more.png) 166px center no-repeat;
+}
+ 
+
+.order-list{
+	width: 1200px;
+	margin: 0 auto;
+	padding: 20px 0;
+	min-height: 535px;
+	background:#191919;
+	color:#fff;
+}
+.order-list .order-serach{
+	width: 120px;
+	height: 36px;
+	border: none;
+	color: #fff;
+	font-size: 18px;
+	background-color: #de492f;
+	cursor: pointer;
+	border-radius: 100px;
+}
+.order-list table{
+	width: 100%;
+	margin-top: 20px;
+	text-align: center;
+	border-top:1px solid #aaa;
+/* 	border-left:1px solid #aaa; */
+    border-radius: 10px;
+    overflow: hidden;
+}
+.order-list table tr th{
+	text-align: center;
+	background: #cc3333;
+	color: #fff;
+}
+.order-list table tr{
+	line-height: 40px;
+}
+.order-list table tr td,.order-list table tr th{
+	border-bottom:1px solid #aaa;
+/* 	border-right:1px solid #aaa; */
+	box-sizing: border-box;
+}
+.order-list table thead tr th{
+	border-bottom:0;
+}
+.order-list table tr td a{
+	color: #cc3333;;
+}
+ 
+
+.order-detail{
+	width: 1200px;
+	margin: 0 auto;
+	padding: 20px 0 ;
+	min-height: 535px;
+	overflow: hidden;
+	color:#fff;
+}
+.order-detail h2{
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 40px;
+}
+.order-detail .right{
+	margin-left: 80px;
+	font-size: 16px;
+	line-height: 36px;
+}
+.order-detail .right label{
+	display: inline-block;
+	width: 200px;
+	text-align: right;
+	vertical-align: top;
+}
+.order-detail .right span{
+	display: inline-block;
+	margin-left: 40px;
+}
+.order-detail .right .clamant-phone{
+	margin-left: 98px;
+}
+.order-detail .right li.info{
+	border-top: 1px solid #666;
+}
+.order-detail .right li .order-info{
+	display: inline-block;
+	margin-left: 0;
+}
+.order-detail .right li .order-info label{
+	width: 100px;
+	word-break:keep-all;
+	white-space:nowrap;
+}

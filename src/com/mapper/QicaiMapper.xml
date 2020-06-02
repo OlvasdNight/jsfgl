@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.QicaiMapper">
+	<select id="findQicaiList"  resultType="Qicai">
+		select * from qicai 
+	</select>
+	
+	<select id="query" parameterType="java.util.Map" resultType="Qicai">
+		select * from qicai 
+	
+		<where>
+			<if test="id!=null and id!=0">
+			   and id= #{id}
+			</if>
+			
+			<if test="name!=null and name!=''">
+			   and name= #{name}
+			</if>
+		
+			
+		</where>
+		
+		<if test="page">
+			limit #{offset} ,#{pageSize}
+		</if>
+	</select>
+	
+	
+	<select id="getCount" parameterType="java.util.Map" resultType="Int">
+		select count(0) from qicai 
+		<where>
+			<if test="id!=null and id!=0">
+			   and id= #{id}
+			</if>
+			
+			<if test="name!=null and name!=''">
+			   and name= #{name}
+			</if>
+			
+	
+		
+		</where>
+	</select>
+	
+	
+	<select id="queryQicaiById" parameterType="int" resultType="Qicai">
+		select * from qicai where id=${value}
+	</select>
+ 
+
+
+	<insert id="insertQicai" useGeneratedKeys="true" keyProperty="id" parameterType="Qicai">
+		insert into qicai
+		(name,changjia,time,state)
+		values
+		(#{name},#{changjia},#{time},#{state});
+	</insert>
+ 
+	
+  
+ 
+ 
+ 
+ 
+ 
+
+
+
+	<update id="updateQicai" parameterType="Qicai" >
+		update qicai set 
+		name=#{name}, changjia=#{changjia}, time=#{time}, state=#{state}
+		where
+		id=#{id}	
+	</update>
+	
+ 
+	
+	<delete id="deleteQicai" parameterType="int">
+	    delete from  qicai where id=${value}
+	</delete>
+
+
+</mapper>
+
+ 

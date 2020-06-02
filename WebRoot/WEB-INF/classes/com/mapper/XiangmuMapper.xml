@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.XiangmuMapper">
+	<select id="findXiangmuList"  resultType="Xiangmu">
+		select * from xiangmu 
+	</select>
+	
+	<select id="query" parameterType="java.util.Map" resultType="Xiangmu">
+		select * from xiangmu 
+	
+		<where>
+			<if test="id!=null and id!=0">
+			   and id= #{id}
+			</if>
+			
+			<if test="name!=null and name!=''">
+			   and name= #{name}
+			</if>
+			
+		</where>
+		
+		<if test="page">
+			limit #{offset} ,#{pageSize}
+		</if>
+	</select>
+	
+	
+	<select id="getCount" parameterType="java.util.Map" resultType="Int">
+		select count(0) from xiangmu 
+		<where>
+			<if test="id!=null and id!=0">
+			   and id= #{id}
+			</if>
+			
+			<if test="name!=null and name!=''">
+			   and name= #{name}
+			</if>
+			
+		
+		</where>
+	</select>
+	
+	
+	<select id="queryXiangmuById" parameterType="int" resultType="Xiangmu">
+		select * from xiangmu where id=${value}
+	</select>
+ 
+
+
+	<insert id="insertXiangmu" useGeneratedKeys="true" keyProperty="id" parameterType="Xiangmu">
+		insert into xiangmu
+		(name,miaoshu)
+		values
+		(#{name},#{miaoshu});
+	</insert>
+ 
+	
+  
+ 
+ 
+ 
+ 
+ 
+
+
+
+	<update id="updateXiangmu" parameterType="Xiangmu" >
+		update xiangmu set 
+		name=#{name}, miaoshu=#{miaoshu}
+		where
+		id=#{id}	
+	</update>
+	
+ 
+	
+	<delete id="deleteXiangmu" parameterType="int">
+	    delete from  xiangmu where id=${value}
+	</delete>
+
+
+</mapper>
+
+ 
